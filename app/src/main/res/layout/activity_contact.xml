@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddContact">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD CONTACT"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        app:boxStrokeColor="#FF3F7EFB"
+        app:hintTextColor="@color/black"
+        android:layout_height="wrap_content"
+        app:startIconDrawable="@drawable/baseline_person_24"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextColor="@color/black"
+            android:id="@+id/etName"
+            android:hint="Enter Name" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        app:boxStrokeColor="#FF3F7EFB"
+        app:hintTextColor="@color/black"
+        android:layout_height="wrap_content"
+        app:startIconDrawable="@drawable/baseline_mail_24"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextColor="@color/black"
+            android:id="@+id/etMail"
+            android:hint="Enter email" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        app:boxStrokeColor="#FF3F7EFB"
+        app:hintTextColor="@color/black"
+        android:layout_height="wrap_content"
+        app:startIconDrawable="@drawable/baseline_phone_24"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextColor="@color/black"
+            android:id="@+id/etPhone"
+            android:inputType="phone"
+            android:hint="Enter phone number" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD CONTACT"
+        android:layout_margin="30dp"
+        android:layout_gravity="center"
+        />
+</LinearLayout>
